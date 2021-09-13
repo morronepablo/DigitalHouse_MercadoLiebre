@@ -156,6 +156,11 @@ footer .pie-footer {
         justify-content: space-between;
     }
 
+    .search-bar {
+        margin: auto;
+        margin-left: 15px;
+    }
+
     .copy-header {
         max-width: 350px;
         text-align: right;
@@ -193,6 +198,13 @@ footer .pie-footer {
         align-items: center;
     }
 
+    .search-bar {
+        margin: auto;
+    }
+    .search-bar input {
+        width: 350px;
+    }
+
     .copy-header {
         max-width: none;
         font-size: 22px;
@@ -210,5 +222,15 @@ footer .pie-footer {
 
     .main-navbar a {
         font-size: 19px;
+    }
+    .banner img {
+        width: 100%;
+    }
+    .imagen-producto {
+        display: flex;
+        justify-content:center
+    }
+    .imagen-producto img {
+        justify-content: center;
     }
 }
