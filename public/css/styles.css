@@ -1,14 +1,20 @@
 * {
     box-sizing: border-box;
+    /* margin: 0; */
 }
 
 body {
     font-family: 'Roboto', sans-serif;
+    background: #F1FAFF;
 }
 
     /*==================================================
         Cabecera y logo
     ==================================================*/
+
+img {
+    width: 100%;
+}
 
 .main-header {
     background-color: #EAC926;
@@ -16,19 +22,56 @@ body {
     padding: 20px;
 }
 
-.logo {
-    width: 200px;
+.main-header-logo-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* line-height: 60px; */
+    border: 2px solid black;
 }
 
-.search-bar {
+.main-logo {
+    width: 50%;
+    border: 1px solid red;
+}
+.main-search {
     display: flex;
-    margin-top: 15px;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    border: 1px solid green;
+}
+
+.search-bar-input {
+    /* justify-content: center; */
+    border: 1px solid brown;
+}
+
+.search-bar-input input{
+    width: 70%;
+}
+
+.search-bar-input {
+    display: flex;
     justify-content: center;
 }
 
 .search-bar input, button {
-    height: 25px;
+    height: 20px;
 }
+
+.search-bar input {
+    border-radius: 5px 0px 0px 5px;
+    border: none;
+}
+
+.search-bar button {
+    border-radius: 0px 5px 5px 0px;
+    border: none;
+    background: #ffffff;
+    cursor: pointer;
+}
+
 
 .copy-header {
     font-weight: 400;
@@ -61,7 +104,7 @@ body {
 ==================================================*/
 
 .main-navbar {
-    display: block;
+    display: none;
 }
 
 .main-navbar ul {
@@ -108,17 +151,80 @@ main h2 {
     font-size: 24px;
 }
 
+.box-price-dicount {
+    position: relative;
+}
+
+main section article i {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFFFFF;
+    color: #39b54a;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+.box-price-dicount {
+    padding: 15px;
+}
+
 main .main-price {
     font-size: 18px;
 }
 
 main .main-discount, h3 {
     font-size: 16px;
+    margin: 0;
+}
+
+main .main-discount {
+    color: #39b54a;
+}
+
+
+main h3 {
+    /* padding: 0px 0px 15px 15px; */
+    /* display: none; */
+    color: #666;
+    margin: 20px 0 0 0;
 }
 
 main img {
-    max-width: 100%;
+    max-width: 90%;
 }
+
+.imagen-producto {
+    border-bottom: solid 1px #ebebeb;
+}
+
+.main-product {
+    background-color: #ffffff;
+}
+
+.precio_oferta {
+    display: flex;
+    flex-grow: row;
+}
+
+.main-price {
+    width: 30%;
+}
+
+.main-discount {
+    width: 70%;
+}
+
+main article {
+    margin-bottom: 10px;
+}
+
+
 
 /*==================================================
     Footer
@@ -182,6 +288,41 @@ footer .pie-footer {
     .main-navbar li {
         margin: 0 5px;
     }
+
+    main h2 {
+        margin-left: 10px;
+    }
+
+    section {
+        display: flex;
+        width: 100%;
+    }
+
+    main img {
+        max-width: 100%;
+    }
+    
+
+    .main-product {
+        max-width: 100%;
+        margin: 10px;
+        justify-content: space-between;
+    }
+
+    .imagen-producto {
+        margin: auto;
+    }
+
+    main h3 {
+        display: block;
+        color: #666;
+        margin: 20px 0 0 0;
+    }
+
+
+    .main-product {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
 }
 
 @media (min-width: 1200px) {
@@ -228,9 +369,19 @@ footer .pie-footer {
     }
     .imagen-producto {
         display: flex;
-        justify-content:center
+        justify-content:center;
     }
     .imagen-producto img {
         justify-content: center;
+    }
+
+    section {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .article-tablet {
+        display: flex;
     }
 }
