@@ -33,13 +33,14 @@
                     <img src="/images/logo-mercado-liebre.svg" class="logo" alt="Logo Mercadolibre"/>
                 </div>
                 <div class="main-search">
-                    <div class="search-bar">
-                        
-                        <div class ="search-bar-input">
-                            <input type="text" name="search" placeholder="Buscar productos, marcas....">
-                            <button type="button" class="btn btn-search"><i class="fas fa-search"></i></button>
+                    <form action="/search" method="GET">
+                        <div class="search-bar">
+                            <div class ="search-bar-input">
+                                <input type="text" name="search" placeholder="Buscar productos, marcas....">
+                                <button type="submit" class="btn btn-search"><i class="fas fa-search"></i></button>
+                            </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
             <div class="main-tarjeta">
@@ -103,7 +104,7 @@
                     </div>
                     <div class="box-price-dicount">
                         <div class="img_truck">
-                            <i class="fas fa-truck"></i>
+                            <i class="fas fa-truck truck"></i>
                         </div>
                         <div class="precio_oferta">
                             <p class="main-price">$6.770</p>
@@ -118,7 +119,7 @@
                     </div>
                     <div class="box-price-dicount">
                         <div class="img_truck">
-                            <i class="fas fa-truck"></i>
+                            <i class="fas fa-truck truck"></i>
                         </div>
                         <div class="precio_oferta">
                             <p class="main-price">$230.000</p>
@@ -138,7 +139,7 @@
                     </div>
                     <div class="box-price-dicount">
                         <div class="img_truck">
-                            <i class="fas fa-truck"></i>
+                            <i class="fas fa-truck truck"></i>
                         </div>
                         <div class="precio_oferta">
                             <p class="main-price">$70.500</p>
@@ -153,7 +154,7 @@
                     </div>
                     <div class="box-price-dicount">
                         <div class="img_truck">
-                            <i class="fas fa-truck"></i>
+                            <i class="fas fa-truck truck"></i>
                         </div>
                         <div class="precio_oferta">
                             <p class="main-price">$23.200</p>
@@ -179,7 +180,7 @@
                     </div>
                     <div class="box-price-dicount">
                         <div class="img_truck">
-                            <i class="fas fa-truck"></i>
+                            <i class="fas fa-truck truck"></i>
                         </div>
                         <div class="precio_oferta">
                             <p class="main-price">$6.770</p>
@@ -194,7 +195,7 @@
                     </div>
                     <div class="box-price-dicount">
                         <div class="img_truck">
-                            <i class="fas fa-truck"></i>
+                            <i class="fas fa-truck truck"></i>
                         </div>
                         <div class="precio_oferta">
                             <p class="main-price">$230.000</p>
@@ -214,7 +215,7 @@
                     </div>
                     <div class="box-price-dicount">
                         <div class="img_truck">
-                            <i class="fas fa-truck"></i>
+                            <i class="fas fa-truck truck"></i>
                         </div>
                         <div class="precio_oferta">
                             <p class="main-price">$70.500</p>
@@ -229,7 +230,7 @@
                     </div>
                     <div class="box-price-dicount">
                         <div class="img_truck">
-                            <i class="fas fa-truck"></i>
+                            <i class="fas fa-truck truck"></i>
                         </div>
                         <div class="precio_oferta">
                             <p class="main-price">$23.200</p>
@@ -250,24 +251,26 @@
     ===================================================-->
     
     <footer>
-        <section>
-            <span class="icon-footer"><i class="fas fa-credit-card"></i></span>
-            <h3>Pagá con tarjeta o en efectivo</h3>
-            <p class="body-pie">Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
-                puntos de pago. ¡Y siempre es seguro!</p>
-        </section>
-        <section>
-            <span class="icon-footer"><i class="fas fa-gift"></i></span>
-            <h3>Envío gratis desde $ 2.500</h3>
-            <p class="body-pie">Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
-                productos. Es un beneficio de Mercado Puntos.</p>
-        </section>
-        <section>
-            <span class="icon-footer"><i class="fas fa-user-shield"></i></span>
-            <h3>Seguridad, de principio a fin</h3>
-            <p class="body-pie">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
-                porque estás siempre protegid@.</p>
-        </section>
+        <div>
+            <section>
+                <span class="icon-footer"><i class="fas fa-credit-card"></i></span>
+                <h3>Pagá con tarjeta o en efectivo</h3>
+                <p class="body-pie">Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+                    puntos de pago. ¡Y siempre es seguro!</p>
+            </section>
+            <section>
+                <span class="icon-footer"><i class="fas fa-gift"></i></span>
+                <h3>Envío gratis desde $ 2.500</h3>
+                <p class="body-pie">Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                    productos. Es un beneficio de Mercado Puntos.</p>
+            </section>
+            <section>
+                <span class="icon-footer"><i class="fas fa-user-shield"></i></span>
+                <h3>Seguridad, de principio a fin</h3>
+                <p class="body-pie">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+                    porque estás siempre protegid@.</p>
+            </section>
+        </div>
         <section class="pie-footer">
             <p class="body-pie">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
         </section>   

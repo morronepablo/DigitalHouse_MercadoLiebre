@@ -6,6 +6,7 @@ const users = [];
 
 //app.use(express.static('public'));
 app.use(express.static(path.resolve(__dirname, "./public")));
+app.use(express.urlencoded());
 
 
 app.listen(3000, () => {
@@ -20,7 +21,7 @@ app.get('/register', (req, res) => {
     res.sendFile(path.join(__dirname, '/views/register.html'));
 });
 
-app.post('/register', (req, res) => {
+app.post('/registro', (req, res) => {
     console.log(req.body);
     // Guardar en el sistema
     users.push(req.body);
