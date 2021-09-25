@@ -29,6 +29,12 @@ app.post('/registro', (req, res) => {
     res.redirect('/');
 });
 
+app.post('/login', (req, res) => {
+    console.log(req.body);
+    // Redireccionamos a la pagina
+    res.redirect('/');
+});
+
 app.get('/login', (req, res) => {
     res.sendFile(path.join(__dirname, '/views/login.html'));
 });

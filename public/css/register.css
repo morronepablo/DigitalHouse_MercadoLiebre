@@ -213,8 +213,8 @@ main label {
     PUNTO DE QUIEBRE
 ==================================================*/
 
-/* ++++++ 768 ++++++ */
-@media (min-width: 768px) {
+/* ++++++ 481 ++++++ */
+@media (min-width: 481px) {
 
     .row-data {
         display: flex;
@@ -247,10 +247,11 @@ main label {
         letter-spacing: 2px;
         cursor: pointer;
     }
+
 }
 
-/* +++++ 1200 +++++ */
-@media (min-width: 1200px) {
+/* +++++ 769 +++++ */
+@media (min-width: 769px) {
     .row-button-box {
         display: flex;
         /* border: 1px solid violet; */
@@ -268,4 +269,5 @@ main label {
         letter-spacing: 2px;
         cursor: pointer;
     }
+
 }
