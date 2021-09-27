@@ -16,7 +16,7 @@ img {
 ==================================================*/
 
 .main-header {
-    background-color: #EAC926;
+    background-color: var(--amarillo);
     /* rellenos a los costados */
     padding: 20px;
 }
@@ -61,7 +61,7 @@ img {
 .search-bar button {
     border-radius: 0px 5px 5px 0px;
     border: none;
-    background: #ffffff;
+    background: var(--blanco);
     cursor: pointer;
 }
 
@@ -75,8 +75,8 @@ img {
 ==================================================*/
 
 .hamburguer-button {
-    background-color: #03264C;
-    color: #ffffff;
+    background-color: var(--azul);
+    color: var(--blanco);
     /* ponemos en bloque el elemento para que quede debajo */
     display: block;
     /* le damos un maximo de ancho para que no ocupe todo el width */
@@ -152,9 +152,9 @@ main section article i {
     padding: 5px;
     width: 30px;
     height: 30px;
-    border: 1px solid #39b54a;
-    background-color: #FFFFFF;
-    color: #39b54a;
+    border: 1px solid var(--verde);
+    background-color: var(--blanco);
+    color: var(--verde);
     border-radius: 50%;
     position: absolute;
     right: 20px;
@@ -175,11 +175,11 @@ main .main-discount, h3 {
 }
 
 main .main-discount {
-    color: #39b54a;
+    color: var(--verde);
 }
 
 main h3 {
-    color: #666;
+    color: var(--grisOscuro);
     margin: 20px 0 0 0;
 }
 
@@ -188,11 +188,11 @@ main img {
 }
 
 .imagen-producto {
-    border-bottom: solid 1px #ebebeb;
+    border-bottom: solid 1px var(--grisClaro);
 }
 
 .main-product {
-    background-color: #ffffff;
+    background-color: var(--blanco);
 }
 
 .precio_oferta {
@@ -247,7 +247,7 @@ footer h3, p {
     padding: 0;
 }
 footer section {
-    color: #666;
+    color: var(--grisOscuro);
     padding: 15px;
 }
 footer .body-pie {
@@ -256,12 +256,12 @@ footer .body-pie {
 
 footer .icon-footer {
     font-size: 2em;
-    color: #1259c3;
+    color: var(--celeste);
     transition: all 0.4s ease-in;
 }
 
 footer .icon-footer:hover {
-    color: #EAC926;
+    color: var(--amarillo);
     transform: rotateY(180deg);
     transition: all 0.4s ease-in;
 }
