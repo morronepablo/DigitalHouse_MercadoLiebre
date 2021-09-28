@@ -187,7 +187,7 @@ main img {
     max-width: 90%;
 }
 
-.imagen-producto {
+.product-image {
     border-bottom: solid 1px var(--grisClaro);
 }
 
@@ -195,7 +195,7 @@ main img {
     background-color: var(--blanco);
 }
 
-.precio_oferta {
+.price-offer {
     display: flex;
     flex-grow: row;
 }
@@ -441,12 +441,12 @@ footer .pie-footer {
         width: 100%;
     }
 
-    .imagen-producto {
+    .product-image {
         display: flex;
         justify-content:center;
     }
     
-    .imagen-producto img {
+    .product-image img {
         justify-content: center;
     }
 
